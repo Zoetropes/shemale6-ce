@@ -1,0 +1,24 @@
+{
+  "name": "Shemale6",
+  "version": "1.0.0",
+  "description": "Get Shemale6 direct Video URL",
+  "manifest_version": 3,
+  "author": "Edge",
+  "icons": {
+    "32": "res/sm-32x32.png",
+    "180": "res/sm-180x180.png",
+    "192": "res/sm-192x192.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["bin/inject.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://shemale6.com/videos/*", "https://*.shemale6.com/videos/*"],
+      "js": ["bin/shemale6.js"]
+    }
+  ]
+}
